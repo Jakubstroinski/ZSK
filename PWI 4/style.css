@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #CECEDB;
+    font-family: Verdana, sans-serif;
+    color: #393C6E;
+}
+
+main{
+    width: 1200px;
+    text-align: center;
+    margin: auto;
+}
+
+.clear{
+    clear: both;
+}
+
+header{
+    height: 150px;
+    background-color: #393C6E;
+}
+
+footer{
+    text-align: right;
+    color: white;
+    background-color: #393C6E;
+    padding: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #1a1f9c;
+}
+
+nav{
+    margin-top: 10px;
+    margin-right: 10px;
+    float: right;
+}
+
+.nava{
+    width: 200px;
+    height: 50px;
+    padding: 7px;
+    font-size: 130%;
+    transition: 0.5s;
+    margin: 0;
+    background-color: #CECEDB;
+    float: left;
+}
+
+.nava:hover{
+    background-color: #393C6E;
+    cursor: pointer;
+    color: #CECEDB;
+}
+
+
+#logo{
+    width: 30%;
+    display: block;
+    float: left;
+    background-color: #393C6E;
+}
+
+#banner{
+    background-color: #9C9DB6;
+    display: flex;
+    align-content: center;
+}
+
+#monito{
+    float: left;
+    width: 30%;
+}
+
+#monitop{
+    float: left;
+    width: 70%;
+    height: 254.23px;
+    font-size: 300%;
+    background-color: #9C9DB6;
+    margin: auto;
+}
+
+#glowny{
+    background-color: #CECEDB;
+    padding: 15px;
+}
+
+#inglowny{
+    width: 60%;
+    min-height: 300px;
+    padding: 30px;
+    border-top: 2px solid #393C6E;
+    border-bottom: 2px solid #393C6E;
+    margin: auto;
+}
+
+h2{
+    text-align: center;
+}
+
+#inglowny p{
+    text-align: justify;
+}
+
+ol{
+    text-align: left;
+}
+
+form{
+    width: 60%;
+    margin: auto;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+textarea{
+    width: 440px;
+    min-height: 60px;
+    margin: 8px 0;
+}
+
+#clear{
+    background-color: #393C6E;
+    width: 49%;
+    padding: 10px;
+    color: white;
+}
+
+#send{
+    background-color: #393C6E;
+    width: 49%;
+    padding: 10px;
+    color: white;   
+}

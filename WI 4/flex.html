@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+        }
+        
+        #main{
+            width: 300px;
+            height: 400px;
+            border: 1px solid black;
+            flex-flow: row nowrap;
+            display: flex;
+            /* align-content: center; */
+        }
+
+        #main div{
+            width: 300px;
+            height: 133px;
+            /* flex-basis: 80px; */
+        }
+
+        #shrink{
+            flex-shrink: 0.5;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div style="background-color: red;"></div>
+        <div style="background-color: blue;" id="shrink"></div>
+        <div style="background-color: khaki;"></div>
+    </div>
+</body>
+</html>
