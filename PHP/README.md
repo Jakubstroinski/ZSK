@@ -1,2 +1,0 @@
-# ZSK
-Szkolne repozytorium
