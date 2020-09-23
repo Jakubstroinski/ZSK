@@ -37,4 +37,5 @@ function dodaj(_tab, _osoba){
     }
 };
 
+let Jano;
 dodaj(tablica, Jano);
