@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+</head>
+
+<style>
+
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+    .flex{
+        display: flex;
+        position: relative;
+    }
+
+    .szescdziesiont{
+        width: 60%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .czterdziesci{
+        width: 40%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #gora_cz{
+        background-color: #3070cf;
+    }
+
+    #gora_sz{
+        background-color: #274377;
+    }
+
+    #dol_cz{
+        background-color: #2aad8d;
+    }
+
+    #dol_sz{
+        background-color: #16a173;
+        color: #fff;
+    }
+
+    .gora{
+        height: 100px;
+    }
+
+    .dol{
+        height: 200px;
+    }
+
+    .link{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 120px;
+        height: 40px;
+        background-color: aquamarine;
+        margin: 10px;
+    }
+
+    #linki{
+        background-color: #112141;
+        justify-content: space-around;
+    }
+
+    footer{
+        background-color: #03332d;
+        height: 60px;
+    }
+
+</style>
+
+<body>
+
+    <div class="flex">
+        <div class="czterdziesci gora" id="gora_cz">40%</div>
+        <div class="szescdziesiont gora" id="gora_sz">60%</div>
+    </div>
+
+    <div class="flex" id="linki">
+        <div class="link">link1</div>
+        <div class="link">link2</div>
+        <div class="link">link3</div>
+        <div class="link">link4</div>
+    </div>
+
+    <div class="flex">
+        <div class="szescdziesiont dol" id="dol_sz">60%</div>
+        <div class="czterdziesci dol" id="dol_cz">40%</div>
+    </div>
+
+    <footer></footer>
+
+
+</body>
+</html>
