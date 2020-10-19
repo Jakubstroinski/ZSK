@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #main-grid{
+            display: grid;
+            grid-template-areas: 
+            'jeden jeden jeden dwa'
+            'trzy trzy . .'
+            'cztery cztery piec szesc';
+            grid-auto-rows: minmax(300px, auto);
+            grid-gap: 10px;
+        }
+        .photo{
+            border-radius: 25px;
+            width: auto;
+            height: auto;
+        }
+        #jeden{
+            grid-area: jeden;
+            background-image: url(bocianptak.png);
+            background-size: 100%;
+        }
+        #dwa{
+            grid-area: dwa;
+            background-image: url(canarrek.png);
+            background-size: 100%;
+        }
+        #czy{
+            grid-area: trzy;
+            background-image: url(hipek.jpg);
+            background-size: 100%;
+        }
+        #cztery{
+            grid-area: cztery;
+            background-image: url(małpa.png);
+            background-size: 100%;
+        }
+        #piec{
+            grid-area: piec;
+            background-image: url(rYba.png);
+            background-size: 100%;
+        }
+        #szesc{
+            grid-area: szesc;
+            background-image: url(czaplaptak.png);
+            background-size: 100%;
+        }
+
+        @media screen and (max-width: 600px){
+            #main-grid{
+                grid-template-areas: 
+                'jeden jeden jeden jeden'
+                'dwa dwa dwa dwa'
+                'trzy trzy trzy trzy'
+                'cztery cztery cztery cztery'
+                'piec piec piec piec'
+                'szesc szesc szesc szesc';
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <div id="main-grid">
+        <div class="photo" id="jeden"></div>
+        <div class="photo" id="dwa" ></div>
+        <div class="photo" id="czy" ></div>
+        <div class="photo" id="cztery" ></div>
+        <div class="photo" id="piec" ></div>
+        <div class="photo" id="szesc" ></div>
+    </div>
+    
+</body>
+</html>

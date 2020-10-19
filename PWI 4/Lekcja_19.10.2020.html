@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lekcja grid</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .grid-container{
+            display:grid;
+            grid-template-columns: 1fr 2fr 2fr 2fr;
+            /* grid-column-gap: 5px; */
+            grid-template-areas: 
+            'header header header header'
+            'left middle middle right'
+            'footer footer footer footer';
+        }
+        .left{
+            grid-area: left;
+            background-color: blue;
+            height: 250px;
+        }
+        .middle{
+            grid-area: middle;
+            background-color: pink;
+            height: 250px;
+        }
+        .right{
+            grid-area: right;
+            background-color: purple;
+            height: 250px;
+        }
+        .header{
+            grid-area: header;
+            background-color: cyan;
+            text-align: center;
+            font-size: 25px;
+            padding: 30px;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: cyan;
+            text-align: center;
+            font-size: 22px;
+            padding: 13px;
+        }
+        @media screen and (max-width: 600px){
+            .grid-container{
+                grid-template-areas: 
+                'header header header header'
+                'left left left left'
+                'middle middle middle middle'
+                'right right right right'
+                'footer footer footer footer';
+            }
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="grid-container">
+        <div class="header">
+            <h2>Nagłówek</h2>
+        </div>
+
+        <div class="left">zawartość</div>
+        <div class="middle">zawartość</div>
+        <div class="right">zawartość</div>
+    
+        <div class="footer">
+            <p>stopka</p>
+        </div>
+    </div>
+
+</body>
+</html>
