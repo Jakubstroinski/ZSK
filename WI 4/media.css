@@ -1,0 +1,11 @@
+body{
+    background-color: lightcoral;
+}
+
+p+p{
+    disyplay: none;
+}
+
+p{
+    color: orange !important;
+}
