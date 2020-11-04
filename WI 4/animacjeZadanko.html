@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zadanko</title>
+
+    <style>
+
+        #pasek{
+            width: 100%;
+            height: 25px;
+            background-color: black;
+            overflow: hidden;
+        }
+
+        #oko{
+            width: 25%;
+            height: 100%;
+            background-color: red;
+            animation-name: oko;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            
+            background-image: linear-gradient(to right, 
+            RGBA(0,0,0,0.9) 25%, 
+            RGBA(0,0,0,0.1)50%, 
+            RGBA(0,0,0,0.9)75%);
+        }
+
+        @keyframes oko{
+            from {margin-left: -20%;}
+            to {margin-left: 120%;}
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="pasek">
+        <div id="oko"></div>
+    </div>
+
+</body>
+</html>

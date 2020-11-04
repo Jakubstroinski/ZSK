@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Animacje</title>
+
+    <style>
+
+        div{
+            width: 100px;
+            height: 50px;
+            background-color: pink;
+            font-weight: bold;
+            position: relative;
+            animation-name: ruch;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            animation-delay: 3s;
+            animation-direction: alternate-reverse;
+        }
+
+        @keyframes ruch{
+            /* 0% {background-color: pink; margin-left: 0px;}
+            25% {background-color: black; margin-top: 100px;}
+            50% {background-color: blue; margin-left: 300px;}
+            75% {background-color: red; margin-right: 200px;}
+            100% {background-color: blueviolet;} */
+            from {margin-left: 0px;}
+            to {margin-left: 400px;}
+        }
+
+        #div1{
+            animation-timing-function: ease;
+        }
+
+        #div2{
+            animation-timing-function: linear;
+        }
+
+        #div3{
+            animation-timing-function: ease-in;
+        }
+
+        #div4{
+            animation-timing-function: ease-out;
+        }
+
+        #div5{
+            animation-timing-function: ease-in-out;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- <div></div> -->
+
+    <div id="div1">linear</div>
+    <div id="div2">EASE</div>
+    <div id="div3">ease-in</div>
+    <div id="div4">ease-out</div>
+    <div id="div5">ease-in-out</div>
+
+</body>
+</html>
