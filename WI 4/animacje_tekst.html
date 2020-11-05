@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Animacja tekstu</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #tlo{
+            background-color:black;
+            height: 200px;
+            width: 1000px;
+            overflow: hidden;
+        }
+        p{
+            animation: animacja 3s infinite alternate;
+            color: white;
+        }
+        @keyframes animacja{
+            from {
+                margin-left: 100%;
+                width: 300%;
+            }
+            75% {opacity: 0.5;}
+            to {
+                margin-left: 25%;
+                width: 150%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="tlo">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur congue mollis lorem, id imperdiet eros placerat et. Aliquam molestie dolor eu nibh porta, quis viverra felis mollis. Integer tristique, ligula non sagittis viverra, sapien augue malesuada odio, ac bibendum eros ex et nulla. Praesent suscipit justo velit, a tristique nisl venenatis at. Duis in nibh quis metus feugiat facilisis at vel nisl. Pellentesque condimentum enim non odio hendrerit, vitae volutpat dolor facilisis. Suspendisse tempor lacinia diam eget sollicitudin. Curabitur volutpat efficitur pretium. Phasellus arcu orci, dictum sit amet bibendum sit amet, sollicitudin a libero. Nulla eros dolor, iaculis non vestibulum vel, fermentum sed lectus.</p>
+    </div>
+</body>
+</html>
