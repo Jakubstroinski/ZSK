@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Lekcja</title>
+
+</head>
+
+<body>
+
+    <script>
+        let liczba = 57;
+        console.log(typeof liczba);             // typ
+        let l1 = liczba.toString();
+        console.log(typeof l1);
+        console.log(liczba.toExponential(2));   // notacja wykladnicza
+        console.log((12).toExponential());
+        let l2 = Math.PI;
+        console.log(l2.toFixed(6));             // zmiennoprzecinkowa
+        console.log(l2.toPrecision(6));
+        console.log(liczba.toPrecision(6));     // zmiennoprzecinkowa - 1 (przez kropke)
+
+        let x = prompt("podaj liczbe");
+        l3 = x.toString();
+        let wynik = l3.length;
+        alert("Liczba sklada sie z " + wynik + " znakow");
+
+        
+    </script>
+
+</body>
+
+</html>
