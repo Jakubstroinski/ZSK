@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/PWI 4/30.11_lekcja.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <title>Formularze i JS</title>
+
+</head> <!-- pattern="[0-9]{3}[0-9]{3}[- ][0-9]{3}" --> 
+<body>
+
+    <script>
+        const reg_imie = /^[A-Z]{1}[a-z]{3, }$/;
+        const reg_nazwisko = /^[A-Z]{1}[a-z]{3, }$/;
+        let imiee = document.getElementById("imie").value;
+        let nazwiskoo = document.getElementById("nazwisko").value;
+        function check(){
+            if (!imiee.match(reg_imie)){
+                document.getElementById("wynik").innerHTML="Popraw imię!";
+            }
+            if (!nazwiskoo.match(reg_nazwisko)){
+                document.getElementById("wynik2").innerHTML="Popraw nazwisko!";
+            }
+        }
+    </script>
+
+    <fieldset id="calosc">
+
+        <header>Formularz</header><br>
+
+        <form method="POST" action="form.php" name="form"> 
+
+            <h3>Dane podstawowe</h3><br>
+
+            <fieldset>
+
+                <label for="imie">Imię</label><br>
+                <input type="text" id="imie" name="imie" class="text" pattern="[A-Z]{1}[a-z]{3, }" required>
+                <p id="wynik"></p>
+
+            </fieldset><br>
+
+            <fieldset>
+
+                <label for="nazwisko">Nazwisko</label><br>
+                <input type="text" id="nazwisko" name="nazwisko" class="text" pattern="[A-Z]{1}[a-z]{3, }" required>
+                <p id="wynik2"></p>
+
+            </fieldset>
+
+            <br><h3>Płeć</h3><br>
+
+            <fieldset id="field_plec">
+
+                <input type="radio" name="plec" value="m" class="radio">Mężczyzna
+                <input type="radio" name="plec" value="k" class="radio">Kobieta
+            
+            </fieldset>
+
+            <br><h3>Opis</h3><br>
+
+            <fieldset>
+
+                <label for="tekstaria">Opisz się w kilku słowach</label>
+                <br><Br>
+                <textarea id="tekstaria"></textarea>
+
+            </fieldset>
+
+            <br><h3>Zainteresowania</h3><br>
+
+            <fieldset class="zaintere">
+
+                <input type="checkbox" name="A" value="Muzyka" class="czek">Muzyka
+                <input type="checkbox" name="B" value="Film" class="czek">Film
+                <input type="checkbox" name="C" value="Teatr" class="czek">Teatr
+                <input type="checkbox" name="D" value="Książka" class="czek">Książka
+
+            </fieldset>
+
+            <br>
+
+            <fieldset class="przycisk">
+                <input type="submit" name="zapisz" value="Zapisz" id="klik" onclick="check()">
+            </fieldset>
+
+        </form>
+
+    </fieldset>
+</body>
+
+</html>
