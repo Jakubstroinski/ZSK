@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 1</title>
+</head>
+<body>
+    <p id="wynik"></p>
+    <script>
+        let liczba = Number(prompt("Podaj liczbe calkowita: "));
+
+        if (liczba < 0 && Number.isInteger(liczba))
+            {alert("Liczba musi byc wieksza od zera!");}
+        else
+            {
+                let l = liczba.toString();
+                let wynik = l.length;
+                document.getElementById("wynik").innerHTML = wynik;
+                alert("Dlugosc Twojej liczby to: " + wynik + " znaki");
+            }
+    </script>
+</body>
+</html>

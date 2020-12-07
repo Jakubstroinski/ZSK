@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 4</title>
+</head>
+<body>
+    <p id="wynik"></p>
+    <script>
+        let liczba = Number(prompt("Podaj liczbe calkowita: "));
+        let x = liczba.toString();
+        let check = x.length;
+        let tab = new Array;
+
+        if (liczba < 0)
+            {alert("Liczba musi byc wieksza od zera!");}
+        else{
+            let odwLiczba = String(liczba).split("").reverse().join("");
+            let odp = (String(liczba)==odwLiczba?"jest ":"nie jest ")+"palindromem";
+            document.getElementById("wynik").innerHTML = odp;
+            alert(odp);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 2</title>
+</head>
+<body>
+    <p id="wynik"></p>
+    <script>
+        let liczba = Number(prompt("Podaj liczbe calkowita: "));
+
+        if (liczba < 0 && Number.isInteger(liczba))
+            {alert("Liczba musi byc wieksza od zera!");}
+        else{
+                liczba = String(liczba);
+                let suma = 0;
+                for (const i of liczba){
+                    let zast = Number(i);
+                    if (zast%2==1){
+                        suma += zast;
+                    }
+                }
+                document.getElementById("wynik").innerHTML = suma;
+                alert("Suma cyfr nieparzystych Twojej liczby to: " + suma);
+            }
+    </script>
+</body>
+</html>
