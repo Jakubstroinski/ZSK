@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./styl4.css">
+
+    <title>Nasza stacja paliw</title>
+
+</head>
+<body>
+    <main>
+        <header>
+            <h2>Witamy na stacji paliw!</h2>
+        </header>
+
+        <section id="obrazki">
+
+            <div class="lewo">
+                <a href="./index.html"><img src="./dom.png" alt="1"></a>
+                <a href="./kalkulacja.html"><img src="./benzyna.png" alt="2"></a>
+            </div>
+            
+            <div class="prawo">
+                <img src="./samochod.png" alt="grafika: samochód" id="auto">
+            </div>
+            
+        </section>
+
+        <section id="obliczenia">
+            <h2>Oblicz, ile litrów musisz zatankować</h2>
+            <br><br>
+            <span>dystans do przejechania w km:</span><br>
+            <input type="number" id="dystans">
+            <br>
+            <span>spalanie samochodu w l/100km:</span><br>
+            <input type="number" id="zuzycie">
+            <br>
+            <input type="button" id="oblicz" value="OBLICZ">
+            <br><br>
+            <p id="outputP">Potrzebujesz x litrów paliwa</p>
+        </section>
+
+        <footer>
+            <span id="lewo">
+                <br>
+                Strona opracował: 01222707016
+            </span>
+            <span id="prawo">
+                <a href="#">Tu pobierzesz zapytania</a>
+            </span>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

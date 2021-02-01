@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Tablice</title>
+
+</head>
+
+<body>
+
+    <p id="wynik1"></p>
+    <p id="wynik2"></p>
+    <p id="wynik3"></p>
+    <p id="wynik4"></p>
+
+    <div>
+        <input type="text" id="myInput">
+        <p id="myOutput"></p>
+    </div>
+
+    <script>
+
+        let tab1 = [7, 3, 1, 6, 9, 5, 4, 10, 2, 2];
+
+        // let tab2 = new Array(tab1.length);
+        let tab2 = tab1.slice();
+
+        let tab3 = sumArrays(tab1, tab2);
+        wynik3.innerText = tab3;
+
+        function sumArrays(arr1, arr2){
+            let newArr = new Array(arr1.length)
+            for (let i = 0; i<tab1.length;i++){
+                newArr[i] = arr1[i] + arr2[i];
+            }
+            return newArr;
+        }
+
+        
+        wynik1.innerText = tab1[4];
+        tab1[6] = 12;
+        
+        wynik2.innerText = tab2;
+
+        tab2 = tab1.slice().reverse();
+        wynik4.innerText = tab2;
+
+        // -------------------------------------------------
+
+        let inputElement = document.getElementById("myInput");
+        let outputElement = document.getElementById("myOutput");
+
+        function getInput(){
+            return inputElement.value;
+        }
+
+        function cipher(){
+            w = getInput();
+            for (let i = 0; i<w.length ; i++){
+                w[i] = String.fromCharCode((w.charCodeAt(i)+2));
+            }
+            outputElement.innerText = w;
+        }
+
+        myInput.addEventListener("keyup", cipher);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolory</title>
+</head>
+<body>
+    <input type="button" value="zmien kolor" onclick="change()">
+    <input type="text" placeholder="podaj kolor" id="kolorek">
+    <script>
+        function change(){
+            let kolor = document.getElementById("kolorek").value.toLowerCase();
+        }
+        if (kolor=="blue" || kolor == "niebieski"){
+            document.body.style.backgroundColor="blue";
+        }
+        else if (kolor == "red" || kolor == "czerwony"){
+            document.body.style.backgroundColor="red";
+        }
+        else (kolor == "green" || kolor == "zielony")
+            document.body.style.backgroundColor="green";
+    </script>
+</body>
+</html>

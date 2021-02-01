@@ -1,0 +1,67 @@
+:root{
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, #obliczenia, #tabelka{
+    background-color: RGB(220,220,220);
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#tabelka{
+    display: flex;
+}
+
+#auto{
+    max-height: 250px;
+}
+
+.lewo{
+    display: flex;
+    flex-direction: column;
+}
+
+.lewo, .prawo{
+    background-color: RGB(255,127,80);
+    color: white;
+    width: 50%;
+    height: 410px;
+}
+
+#lewo, #prawo{
+    background-color: RGB(255,127,80);
+    color: white;
+    width: 50%;
+    height: 100px;
+}
+
+#obrazki{
+    display: flex;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+
+a:active, a:link, a:hover, a:visited{
+    color: white;
+}
+
+table, tr, td{
+    align-self: center;
+    border: 1px solid rgb(255,127,80);
+    padding: 10px;
+    text-align: center;
+}

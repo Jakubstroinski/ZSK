@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanko</title>
+
+    <style>
+        .red{
+            color: red;
+        }
+        .green{
+            color: green;
+        }
+    </style>
+
+</head>
+<body>
+    
+
+    <form method="GET" action="">
+
+        <label for="jeden">1. Język programowania po stronie serwera WWW to: <input type="text" name="jeden" id="jeden" pattern="{a-z}{A-Z}"></label>
+        <br><br>
+
+        <label for="dwa">2. Które słowo kluczowe powoduje natychmiastowe wyjście z pętli</label><br>
+        <div id="dwa">
+        <input type="radio" name="hihi" value="continue"> continue<br>
+        <input type="radio" name="hihi" value="break"> break<br>
+        <input type="radio" name="hihi" value="default"> default<br>
+        </div>
+        <br>
+
+        <label for="trzy">3. Zaznacz poprawne opowiedzi</label><br>
+        <div id="trzy">
+        <input type="checkbox" name="ok"> Język PHP pozwala obsłużyć bazę danych MySQL<br>
+        <input type="checkbox" name="oke"> Język JavaScript może zapisywać pliki na serwerze<br>
+        <input type="checkbox" name="oki"> Język HTML umożliwia tworzenie formularzy<br>
+        </div>
+        <br>
+
+        <label for="cztery">4. Język znaczników do opisu strony WWW</label>
+        <select id="cztery">
+            <option>-</option>
+            <option name="html">HTML</option>
+            <option>JS</option>
+            <option>PHP</option>
+        </select>
+        <br><br>
+
+        <button id="check">Sprawdz</button>
+        <button id="clear" type="reset">Wyczyść</button>
+
+    </form><br>
+
+    <div id="wynik"></div>
+
+    <script>
+        let form = document.querySelector("form");
+        let jeden = document.getElementsByName("jeden")[0].value.toUpperCase();
+        const reg=/^PHP$/;
+        let check = form.querySelector("#check");
+        let si = form.querySelector('#si');
+        let wynik = 0;
+
+        function ValidateForm(){
+
+            if(document.getElementsByName("hihi")[1].checked) {
+                wynik++;
+            }
+
+            if (document.getElementsByName("ok")[0].checked && document.getElementsByName("oki")[0].checked) {
+                wynik++;
+                document.getElementsByName("ok")[0].classList.add("green");
+            }
+
+            if (jeden.match(reg)){
+                wynik++;
+            }
+
+            if(document.getElementsByName("html")[0].selected){
+                wynik++;
+            }
+
+            return wynik;
+        }
+
+        check.addEventListener('click', ValidateForm);
+        document.querySelector("#wynik").innerHTML = `Twój wynik to: ${wynik}!`
+        console.log(wynik);
+
+    </script>
+
+</body>
+</html>

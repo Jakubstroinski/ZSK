@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trujkont</title>
+
+</head>
+
+<body>
+    <input type="number" id="wysokosc">
+    <button id="przycisk">Baton</button>
+    <p id="wyjscie"></p>
+    
+    <script>
+        przycisk.addEventListener("click", () => {
+            let h = wysokosc.value;
+            // console.log(h);
+            for (let i = 1 ; i <= h ; i++){
+                for (let j = 1 ; j <= i ; j++){
+                wyjscie.innerHTML += i*j + " ";
+            }
+            wyjscie.innerHTML += "<br>";
+            }
+        })
+    </script>
+
+</body>
+</html>
