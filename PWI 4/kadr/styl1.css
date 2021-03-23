@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+footer{
+    background-color: steelblue;
+    padding: 20px;
+    text-align: center;
+}
+
+h1{
+    letter-spacing: 5px;
+}
+
+form{
+    padding: 30px;
+    line-height: 3px;
+    display: flex;
+    flex-direction: column;
+}
+
+form:hover{
+    background-color: deepskyblue;
+}
+
+nav{
+    background-color: navy;
+    color: white;
+    width: 25%;
+    /* height: 700px; */
+}
+
+.jeden{
+    background-color: royalblue;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dwa{
+    background-color: steelblue;
+    height: 300px;
+    /* width: 75%; */
+}
+
+.trzy{
+    background-color: royalblue;
+    height: 300px;
+    /* width: 75%; */
+    text-align: center;
+}
+
+.pojemnik{
+    width: 100%;
+}
+
+button{
+    width: 100px;
+}
+
+input{
+    margin: 10px 10px 10px 0;
+}

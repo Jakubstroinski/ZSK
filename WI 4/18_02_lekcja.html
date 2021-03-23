@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zadanko</title>
+</head>
+<body>
+
+    <p></p>
+
+    <script>
+
+        const p = document.querySelector('p');
+        let zdanie = prompt('Podaj jakieś zdanie kolo:');
+        let odp = zdanie.split(" ");
+
+        p.innerHTML = `No i ilość słów w zdaniu to masz elegancko tutaj: ${odp.length}`;
+
+    </script>
+</body>
+</html>

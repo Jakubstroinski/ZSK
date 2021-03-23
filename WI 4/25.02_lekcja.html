@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zadanko</title>
+</head>
+<body>
+
+    <input type="text" id="txt">
+    <button type="submit" id="btn">Licz</button>
+
+    <p></p>
+
+    <script>
+
+        let x = tab[0];
+        let suma = 1;
+        const p = document.querySelector('p');
+
+        const tab = new Array(10);
+
+        for (let i = 0; i < tab.length; i++) {
+            tab[i] = prompt('Imie?');
+        }
+        console.log(tab);
+        tab.sort();
+
+        for (let i = 1; i<=tab.length;i++){
+            if(tab[i]==x){
+                suma++;
+            }
+            else{
+                p.innerText = `${tab[i]}: ${suma}`;
+                suma = 0;
+                x = tab[i];
+            }
+        }
+    </script>
+</body>
+</html>
