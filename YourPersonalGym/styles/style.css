@@ -1,0 +1,320 @@
+:root{
+    --tlo: #222831;
+    --tlo2: #393e46;
+    --zolty: #ffd369;
+    --color4: #eeeeee;
+    --tytulowy: font-family: 'Varela Round', sans-serif;
+    --naglowek: font-family: 'Rubik', sans-serif;
+    --pragraf: font-family: 'Hind Siliguri', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color4);
+    font-family: 'Hind Siliguri', sans-serif;
+    text-align: center;
+}
+
+header{
+    font-family: 'Rubik', sans-serif;
+    height: 100px;
+    background-color: var(--color4);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+#head-logo{
+    transform: scale(0.14);
+}
+
+.head-logo{
+    width: 777px;
+    height: 548px;
+}
+
+nav a{
+    margin: 10px 5px;
+    text-decoration: none;
+    transition: 0.3s;
+    margin: 0;
+}
+
+nav p{
+    transition: 0.3s;
+    font-weight: 600;
+    color: #8a6206;
+}
+
+nav p:hover{
+    color: #d39f24;
+}
+
+nav a:visited{
+    color: var(--tlo2);
+}
+
+nav{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer{
+    height: 40px;
+    background-color: var(--tlo2);
+    color: var(--color4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: url('./graphics/avatar-placeholder.png');
+    background-size: contain;
+    cursor: pointer;
+    transition: 0.3;
+}
+
+.avatar:hover{
+    opacity: 0.8;
+}
+
+.slider{
+    height: 957px;
+    width: 100%;
+    background: url("./graphics/sala2.png");
+    background-size: cover !important;
+    transition: 1.5s;
+}
+
+.slider-button-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.slider-button{
+    width: 40px;
+    height: 40px;
+    background-color: var(--tlo);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color4);
+    font-size: 15px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.slider-button:hover{
+   opacity: 1;
+   cursor: default;
+}
+
+i{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-slider-button{
+    margin-left: 30px;
+}
+
+.right-slider-button{
+    margin-right: 30px;
+}
+
+.main-content{
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    font-weight: 500;
+    text-align: justify;
+}
+
+h1{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 30px;
+}
+
+.red-border{
+    border: red 2px solid;
+}
+
+.container{
+    width: 130%;
+    height: 570px;
+    display: flex;
+    /* background-color: var(--zolty); */
+}
+
+.about-left{
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    transition: 0.5s;
+    /* background: rgba(223, 209, 84, 0.6); */
+}
+
+.about-left p{
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: justify;
+    transition: 0.5s;
+}
+
+.about-right{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+    font-size: 100px;
+}
+
+.about-icon{
+    width: 50%;
+    height: 50%;
+    margin: auto auto;
+    transition: 0.5s;
+}
+
+.about-icon:hover{
+    background-color: #f5c1156b;
+    cursor: pointer;
+}
+
+hr{
+    width: 100%;
+}
+
+.rules-p{
+    width: 90%;
+}
+
+.gallery-grid{
+    display: grid;
+    grid-template-areas: 
+    'jeden dwa trzy'
+    'cztery piec szesc';
+    grid-auto-rows: minmax(300px, auto);
+    grid-gap: 20px;
+}
+
+.photo{
+    width: 400px;
+    height: 280px;
+    transition: 0.5s;
+    border: #222831 2px solid;
+}
+
+.photo:hover{
+    opacity: 0.8;
+}
+
+#photoOne{
+    grid-area: jeden;
+    background-image: url(./graphics/sala1.png);
+    background-size: cover;
+}
+
+#photoTwo{
+    grid-area: dwa;
+    background-image: url(./graphics/sala2.png);
+    background-size: cover;
+}
+
+#photoThree{
+    grid-area: trzy;
+    background-image: url(./graphics/sala3.png);
+    background-size: cover;
+}
+
+#photoFive{
+    grid-area: cztery;
+    background-image: url(./graphics/sala4.png);
+    background-size: cover;
+}
+
+#photoFour{
+    grid-area: piec;
+    background-image: url(./graphics/sala5.png);
+    background-size: cover;
+}
+
+#photoSix{
+    grid-area: szesc;
+    background-image: url(./graphics/banner1.png);
+    background-size: cover;
+}
+
+.container-contact{
+    display: flex;
+    /* background-color: #393e465b; */
+    margin-bottom: 30px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    padding: 10px;
+    margin: 20px 10px;
+    width: 200px;
+}
+
+.inputy{
+    display: flex;
+    flex-direction: row;
+}
+
+textarea{
+    resize: none;
+    width: 462px;
+    height: 250px;
+    margin-bottom: 10px;
+}
+
+button{
+    margin: 10px auto 40px auto;
+    padding: 10px;
+    background-color: var(--zolty);
+    /* border: #393e46 solid 2px; */
+    /* border-radius: 10px; */
+    width: 160px;
+    border: none;
+    transition: 0.5s;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #d4a63a;
+}

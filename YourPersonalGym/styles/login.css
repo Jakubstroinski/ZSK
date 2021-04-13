@@ -1,0 +1,81 @@
+:root{
+    --tlo: #222831;
+    --tlo2: #393e46;
+    --zolty: #ffd369;
+    --color4: #eeeeee;
+    --tytulowy: font-family: 'Varela Round', sans-serif;
+    --naglowek: font-family: 'Rubik', sans-serif;
+    --pragraf: font-family: 'Hind Siliguri', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255,211,105);
+    background: linear-gradient(90deg, rgba(255,211,105,1) 5%, rgba(255,230,130,1) 38%, rgba(238,238,238,1) 100%);
+}
+
+main{ 
+    margin-top: 2%;
+    width: 20%;
+    height: 400px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px #d6a430 solid;
+    border-bottom: 2px #d6a430 solid;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+input{
+    padding: 7px;
+    margin: 6px 0 0 0;
+    border: 1px #d6a430 solid;
+    font-family: 'Varela Round', sans-serif;
+}
+
+button{
+    padding: 10px;
+    width: 200px;
+    border: none;
+    background-color:#ffeb7b;
+    font-family: 'Varela Round', sans-serif;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: #ffdc16;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: #494b50;
+    font-size: 15px;
+}
+
+p{
+    font-family: 'Varela Round', sans-serif;
+}
+
+.side_logo{
+    width: 113px;
+    height: 100%;
+    margin-top: 10%;
+    transform: scale(1.3);
+}

@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255,211,105);
+    background: linear-gradient(90deg, rgba(255,211,105,1) 5%, rgba(255,230,130,1) 38%, rgba(238,238,238,1) 100%);
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+.side_logo{
+    width: 113px;
+    height: 100%;
+    margin-top: 5%;
+    transform: scale(1.3);
+}
+
+main{ 
+    margin-top: 2%;
+    width: 40%;
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px #d6a430 solid;
+    border-bottom: 2px #d6a430 solid;
+}
+
+.profileInfo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.profileAvatar{
+    width: 100px;
+    height: 100px;
+    margin: 30px 10px 30px 10px;
+    transition: 0.5s;
+    border-bottom: 2px #d6a430 solid;
+}
+
+.profileAvatar:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.infoFirst{
+    height: auto;
+    width: 120px;
+    line-height: 15px;
+}
+
+h3{
+    font-family: 'Rubik', sans-serif;
+}
+
+.rentsInfo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.activeRent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.activeRentImg{
+    width: 350px;
+    height: 240px;
+    margin: 10px 10px 20px 10px;
+    border: 2px #d6a430 solid;
+    transition: 0.5s;
+}
+
+.activeRentImg:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+button{
+    padding: 10px;
+    width: 200px;
+    border: none;
+    background-color:#ffeb7b;
+    font-family: 'Varela Round', sans-serif;
+    transition: 0.3s;
+    margin: 20px 0 40px 0;
+}
+
+button:hover{
+    background-color: #ffdc16;
+    cursor: pointer;
+}

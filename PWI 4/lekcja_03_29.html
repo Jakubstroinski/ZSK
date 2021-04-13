@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+
+    </p>
+
+    <input type="text" name="wzrost" placeholder="wzrost">
+    <input type="text" name="waga" placeholder="waga">
+
+    <button id="oblicz">:)</button>
+    <script>
+        
+        oblicz.addEventListener("click",() => {
+            let in1 = document.querySelectorAll("input");
+            let wzrost = in1[0].value / 100;
+            let waga = in1[1].value;
+            let BMI = waga / (wzrost*wzrost);
+
+            if (BMI < 18.5){
+                document.querySelector('p').innerText = "za małooooo";
+            } else {
+                if (BMI > 25)
+                document.querySelector('p').innerText = "za dużoooo";
+                else {
+                    document.querySelector('p').innerText = BMI.toFixed(2);
+                }
+            }
+        });
+
+    </script>
+</body>
+</html>
