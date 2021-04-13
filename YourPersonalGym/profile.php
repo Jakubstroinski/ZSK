@@ -19,7 +19,7 @@
 </head>
 <body>
 
-    <a href="./index.html" class="side_logo">
+    <a href="./index.php" class="side_logo">
         <img class="side_logo" src="./graphics/Logo-Kuznia.png">
     </a>
 
@@ -42,7 +42,7 @@
             <img src="./graphics/sala4.png" alt="activeRent" class="activeRentImg">
         </section>
 
-        <button><a href="./index.html">Wyloguj</a></button>
+        <button><a href="./index.php">Wyloguj</a></button>
     </main>
 </body>
 </html>

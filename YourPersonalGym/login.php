@@ -9,7 +9,7 @@
     <title>YourPersonalGym</title>
 
     <link href="./fonts/fontello/css/fontello.css" rel="stylesheet">
-    <link href="./styles/register.css" rel="stylesheet">
+    <link href="./styles/login.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
@@ -18,27 +18,22 @@
 
 <body>
     
-    <a href="./index.html" class="side_logo">
+    <a href="./index.php" class="side_logo">
         <img class="side_logo" src="./graphics/Logo-Kuznia.png">
     </a>
 
     <main>
+        <form method="GET" action="" name="login" enctype="application/x-www-form-urlencoded">
+            <p>Logowanie</p>
 
-
-        <form method="GET" action="" id="regForm" name="register" enctype="application/x-www-form-urlencoded">
-            <p>Rejestracja</p>
-
-            <input type="text" placeholder="Imię" name="name">
-            <input type="text" placeholder="Nazwisko" name="surname">
-            <input type="text" placeholder="Login" name="login">
-            <input type="text" placeholder="Hasło" name="passwd">
+            <input type="text" placeholder="Login" name="login"><br>
+            <input type="text" placeholder="Hasło" name="passwd"><br>
             
-            <Br>
-
-            <button id="regBut">Zarejestruj</button><br>
-            <a href="./login.html">Logowanie >></a><br>
+            <a href="#">Nie pamiętam hasła</a><br>
+            
+            <button><a href="./profile.php">Zaloguj</a></button><br><br>
+            <a href="./register.php">Nie posiadasz jeszcze konta? Załóż je tutaj!</a><br>
         </form>
     </main>
-    <script src="./register.js"></script>
 </body>
 </html>

@@ -20,7 +20,7 @@
 <body>
     <main>
         <header>
-            <a href="./index.html" id="head-logo">
+            <a href="./index.php" id="head-logo">
                 <img class="head-logo" src="./graphics/Logo-Kuznia.png">
             </a>
 
@@ -30,7 +30,7 @@
                 <a href="#link3"><p>Galeria</p></a>
                 <a href="#link4"><p>Rezerwacja</p></a>
                 <a href="#link5"><p>Kontakt</p></a>
-                <a href="login.html"><p>Zaloguj się</p></a>
+                <a href="login.php"><p>Zaloguj się</p></a>
                 <div class="avatar"></div>
             </nav>
         </header>
