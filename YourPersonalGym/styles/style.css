@@ -94,7 +94,7 @@ footer{
 .slider{
     height: 957px;
     width: 100%;
-    background: url("./graphics/sala2.png");
+    background: url("./../graphics/sala2.png");
     background-size: cover !important;
     transition: 1.5s;
 }
@@ -236,37 +236,37 @@ hr{
 
 #photoOne{
     grid-area: jeden;
-    background-image: url(./graphics/sala1.png);
+    background-image: url(/YourPersonalGym/graphics/sala1.png);
     background-size: cover;
 }
 
 #photoTwo{
     grid-area: dwa;
-    background-image: url(./graphics/sala2.png);
+    background-image: url(/YourPersonalGym/graphics/sala2.png);
     background-size: cover;
 }
 
 #photoThree{
     grid-area: trzy;
-    background-image: url(./graphics/sala3.png);
+    background-image: url(/YourPersonalGym/graphics/sala3.png);
     background-size: cover;
 }
 
 #photoFive{
     grid-area: cztery;
-    background-image: url(./graphics/sala4.png);
+    background-image: url(/YourPersonalGym/graphics/sala4.png);
     background-size: cover;
 }
 
 #photoFour{
     grid-area: piec;
-    background-image: url(./graphics/sala5.png);
+    background-image: url(/YourPersonalGym/graphics/sala5.png);
     background-size: cover;
 }
 
 #photoSix{
     grid-area: szesc;
-    background-image: url(./graphics/banner1.png);
+    background-image: url(/YourPersonalGym/graphics/banner1.png);
     background-size: cover;
 }
 

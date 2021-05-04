@@ -23,17 +23,42 @@
     </a>
 
     <main>
-        <form method="GET" action="" name="login" enctype="application/x-www-form-urlencoded">
+        <form method="post" action="./ukryte/login-u.php" name="login" enctype="application/x-www-form-urlencoded">
             <p>Logowanie</p>
 
-            <input type="text" placeholder="Login" name="login"><br>
-            <input type="text" placeholder="Hasło" name="passwd"><br>
+            <input type="text" placeholder="Login" name="login_login"><br>
+            <input type="password" placeholder="Hasło" name="passwd_login"><br>
             
             <a href="#">Nie pamiętam hasła</a><br>
             
-            <button><a href="./profile.php">Zaloguj</a></button><br><br>
+            <button type="submit" value="Submit" name="sub_login"><a href="./profile.php">Zaloguj</a></button><br><br>
             <a href="./register.php">Nie posiadasz jeszcze konta? Załóż je tutaj!</a><br>
         </form>
+
+        <?php 
+        if (isset($_GET["error"])){
+            if ($_GET["error"] == "emptyinput") {
+                echo "<p>Fill in all fields</p>";
+            }
+            if ($_GET["error"] == "wronglogin") {
+                echo "<p>Try again!</p>";
+            }
+            if ($_GET["error"] == "invalidlogin") {
+                echo "<p>No specials allowed!</p>";
+            }
+            if ($_GET["error"] == "passwordsdontmatch") {
+                echo "<p>Passwords don't match!</p>";
+            }
+            if ($_GET["error"] == "usernametaken") {
+                echo "<p>Username is already taken :(</p>";
+            }
+            else {
+                echo "<p>U have signed up!</p>";
+            }
+        }
+        ?>
+
     </main>
+
 </body>
 </html>
